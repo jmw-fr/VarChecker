@@ -1,0 +1,32 @@
+﻿{
+  "buildOptions": {
+    "xmlDoc": true,
+    "additionalArguments": [
+      "/ruleset:../../stylecop.ruleset",
+      "/additionalfile:../../stylecop.json"
+    ]
+  },
+  "dependencies": {
+    "xunit": "2.2.0-*",
+    "dotnet-test-xunit": "2.2.0-*",
+    "FluentAssertions": "4.*",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0"
+    },
+    "StyleCop.Analyzers": "1.0.0",
+    "VarChecker": {
+      "target": "project"
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet54",
+        "portable-net45+win8"
+      ]
+    }
+  },
+  "testRunner": "xunit",
+  "version": "1.0.0-*"
+}
