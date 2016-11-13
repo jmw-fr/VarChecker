@@ -1,4 +1,4 @@
-﻿// <copyright file="NullChecker.cs" company="Weeger Jean-Marc">
+﻿// <copyright file="StringChecker.cs" company="Weeger Jean-Marc">
 // Copyright Weeger Jean-Marc under MIT Licence. See https://opensource.org/licenses/mit-license.php.
 // </copyright>
 
@@ -7,37 +7,32 @@ namespace Jmw.VarChecker
     using System;
 
     /// <summary>
-    /// Checks for NULL
+    /// Cheker for <see cref="string" />
     /// </summary>
-    public static class NullChecker
+    public static class StringChecker
     {
         /// <summary>
-        /// Checks that the variable is not null.
+        /// Checks that the string is not null or empty
         /// </summary>
-        /// <typeparam name="T">Variable type</typeparam>
         /// <param name="var">Variable to check</param>
         /// <param name="message">Exception message</param>
         /// <returns>The input variable</returns>
-        /// <exception cref="ArgumentNullException">If var is null.</exception>
-        public static T CannotBeNotNull<T>(this T var, string message = null)
-            where T : class
+        public static string CannotNotNullOrEmpty(this string var, string message = null)
         {
-            return var.CannotBeNotNull<ArgumentNullException, T>(message);
+            return var.CannotNotNullOrEmpty<ArgumentException>(message);
         }
 
         /// <summary>
-        /// Checks that the variable is not null.
+        /// Checks that the string is not null or empty
         /// </summary>
         /// <typeparam name="TException">Exception to throw</typeparam>
-        /// <typeparam name="T">Variable type</typeparam>
         /// <param name="var">Variable to check</param>
         /// <param name="message">Exception message</param>
         /// <returns>The input variable</returns>
-        public static T CannotBeNotNull<TException, T>(this T var, string message = null)
+        public static string CannotNotNullOrEmpty<TException>(this string var, string message = null)
             where TException : Exception, new()
-            where T : class
         {
-            if (var == null)
+            if (string.IsNullOrEmpty(var))
             {
                 throw Helpers.CreateException<TException>(message);
             }
