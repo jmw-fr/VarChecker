@@ -6,6 +6,7 @@ The project page is here : https://jmw-fr.github.io/VarChecker/
 
 The source code is here : https://github.com/jmw-fr/VarChecker/
 
+The nuget package is here: https://www.nuget.org/packages/VarChecker/
 
 VarChecker is a helper library that simplifies the check of variable values.
 
