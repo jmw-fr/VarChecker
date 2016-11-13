@@ -6,7 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6A44898-34BC-4B76-8CAF-A6D9960DE640}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		index.html = index.html
+		LICENSE = LICENSE
 		nuget.config = nuget.config
+		params.json = params.json
+		README.md = README.md
 		stylecop.json = stylecop.json
 		stylecop.ruleset = stylecop.ruleset
 	EndProjectSection
@@ -19,18 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{97D23DA1-9
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VarChecker.Test", "test\VarChecker.Test\VarChecker.Test.xproj", "{3AC73906-6859-49DB-B6DA-AD2F1CE6CBFC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{580357FC-F0B4-40EC-8B21-446E5860E532}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\nuget.config = .nuget\nuget.config
-		.nuget\nuget.exe = .nuget\nuget.exe
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{3D674067-5F02-4C4E-82C0-02D23E4F8E16}"
 	ProjectSection(SolutionItems) = preProject
 		build\pack.bat = build\pack.bat
 		build\push.bat = build\push.bat
+		build\varchecker.png = build\varchecker.png
+		build\varchecker.svg = build\varchecker.svg
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0F17590F-0CD9-4559-AA1F-3CE90CC919F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,7 +54,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E424053E-EC34-4A8B-8112-F679F699AB38} = {03047E0E-CE31-4E9F-A41F-2C80509E18C7}
 		{3AC73906-6859-49DB-B6DA-AD2F1CE6CBFC} = {97D23DA1-9DE2-499D-83E6-E5B9FB31D7B4}
-		{580357FC-F0B4-40EC-8B21-446E5860E532} = {F6A44898-34BC-4B76-8CAF-A6D9960DE640}
 		{3D674067-5F02-4C4E-82C0-02D23E4F8E16} = {F6A44898-34BC-4B76-8CAF-A6D9960DE640}
 	EndGlobalSection
 EndGlobal
