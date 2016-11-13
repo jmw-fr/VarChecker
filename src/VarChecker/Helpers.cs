@@ -5,7 +5,6 @@
 namespace Jmw.VarChecker
 {
     using System;
-    using System.Runtime.CompilerServices;
 
     /// <summary>
     /// Helpers functions
