@@ -2,7 +2,7 @@
   "title": "VarChecker",
   "authors": [ "Jean-Marc Weeger" ],
   "description": "Fluent assertion library for variables",
-  "version": "0.1.0.1-*",
+  "version": "0.2.1-*",
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
@@ -42,6 +42,6 @@
       "url": "https://github.com/jmw-fr/VarChecker",
       "type": "git"
     },
-    "iconUrl": "https://github.com/jmw-fr/VarChecker/blob/master/build/varchecker.png"
+    "iconUrl": "https://jmw-fr.github.io/VarChecker/images/varchecker.png"
   }
 }
