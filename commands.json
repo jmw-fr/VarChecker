@@ -1,0 +1,14 @@
+{
+  "commands": {
+    "pack": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c build\\pack.bat"
+    },
+    "push": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c build\\push.bat"
+    }
+  }
+}
