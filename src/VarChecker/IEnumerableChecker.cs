@@ -7,7 +7,6 @@ namespace Jmw.VarChecker
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using System.Linq;
 
     /// <summary>
     /// Checkers for <see cref="IEnumerable{T}"/>
