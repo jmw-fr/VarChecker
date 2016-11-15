@@ -2,11 +2,14 @@
   "title": "VarChecker",
   "authors": [ "Jean-Marc Weeger" ],
   "description": "Fluent assertion library for variables",
-  "version": "0.2.1-*",
+  "version": "0.2.2-*",
 
   "dependencies": {
     "NETStandard.Library": "1.6.0",
-    "StyleCop.Analyzers": "1.0.0"
+    "StyleCop.Analyzers": {
+      "version": "1.0.0",
+      "type": "build"
+    }
   },
 
   "frameworks": {
@@ -36,7 +39,7 @@
     "owners": [ "Jean-Marc Weeger" ],
     "projectUrl": "https://github.com/jmw-fr/VarChecker",
     "licenseUrl": "https://opensource.org/licenses/mit-license.php",
-    "releaseNotes": "",
+    "releaseNotes": "Removing Stylecop dependency",
     "requireLicenseAcceptance": false,
     "repository": {
       "url": "https://github.com/jmw-fr/VarChecker",
